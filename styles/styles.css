@@ -1,0 +1,126 @@
+/*!
+  @author Mohamed Muntasir
+  @link https://github.com/devmotheg
+  */
+
+/* General */
+
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+body {
+  font-size: 18px;
+  font-family: "Kumbh Sans", sans-serif;
+  background: url("../images/bg-pattern-top.svg"),
+    url("../images/bg-pattern-bottom.svg") hsl(185, 75%, 39%);
+  background-repeat: no-repeat;
+  margin: 0;
+  height: 100vh;
+  background-position: right calc(47vw + 15%) bottom calc(65vh - 15vw),
+    left calc(40vw + 25%) top calc(72vh - 10vw);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+/* Container */
+
+.container {
+  width: 330px;
+  background: white;
+  display: grid;
+  grid-template-rows: 1fr calc(78em / 18) calc(70em / 18);
+  border-radius: 18px;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 25px 60px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Pattern image */
+
+.pattern {
+  overflow: hidden;
+  background: hsl(185, 75%, 39%);
+}
+
+.pattern img {
+  width: 100%;
+  display: block;
+  transform: scaleX(1.1);
+}
+
+/* Person image */
+
+.person {
+  justify-self: center;
+  transform: translateY(calc(-53em / 18));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: 5px solid white;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 96px;
+  height: 96px;
+}
+
+/* Info */
+
+.info {
+  text-align: center;
+}
+
+.info span {
+  color: hsl(227, 10%, 46%);
+  font-weight: 400;
+  margin-left: calc(5em / 16);
+}
+
+.info h1 {
+  margin-bottom: calc(5em / 16);
+  font-size: calc(18em / 18);
+}
+
+.info p {
+  color: hsl(227, 10%, 46%);
+  font-size: calc(13em / 16);
+}
+
+/* Validation */
+
+.validation {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: calc(25em / 18);
+  border-top: 1px solid hsl(0, 0%, 59%, 0.2);
+}
+
+.validation * {
+  text-align: center;
+}
+
+.validation strong {
+  font-size: calc(18em / 18);
+  font-weight: 700;
+  display: block;
+  margin-bottom: calc(3em / 18);
+}
+
+.validation p {
+  color: hsl(0, 0%, 59%);
+  font-size: calc(11em / 16);
+}
